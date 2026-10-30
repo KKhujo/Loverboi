@@ -13,7 +13,6 @@ config_version=5
 config/name="loverboi"
 run/main_scene="uid://bxgpq0q4r63t"
 config/features=PackedStringArray("4.7", "GL Compatibility")
-config/icon="res://icon.svg"
 
 [display]
 

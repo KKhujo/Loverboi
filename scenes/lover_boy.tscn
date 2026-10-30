@@ -1,0 +1,67 @@
+[gd_scene format=3 uid="uid://ii81fpjjh73k"]
+
+[ext_resource type="Texture2D" uid="uid://crpb3uhy2oo3f" path="res://sprites/loverboi-idle-Sheet.png" id="1_cqvsh"]
+[ext_resource type="Texture2D" uid="uid://b762fvug65eif" path="res://sprites/loverboi-Run-Sheet.png" id="2_kip5n"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cd51h"]
+atlas = ExtResource("1_cqvsh")
+region = Rect2(0, 0, 8, 15)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fwd40"]
+atlas = ExtResource("2_kip5n")
+region = Rect2(0, 0, 11, 15)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oru0c"]
+atlas = ExtResource("2_kip5n")
+region = Rect2(11, 0, 11, 15)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_51pu8"]
+atlas = ExtResource("2_kip5n")
+region = Rect2(22, 0, 11, 15)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lhtwn"]
+atlas = ExtResource("2_kip5n")
+region = Rect2(33, 0, 11, 15)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4k2iy"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cd51h")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fwd40")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oru0c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_51pu8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lhtwn")
+}],
+"loop": 1,
+"name": &"run",
+"speed": 10.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_x4g88"]
+size = Vector2(10, 15)
+
+[node name="LoverBoy" type="CharacterBody2D" unique_id=52732028]
+texture_filter = 1
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1060011234]
+sprite_frames = SubResource("SpriteFrames_4k2iy")
+animation = &"run"
+frame = 2
+frame_progress = 0.86810195
+
+[node name="RunCollision" type="CollisionShape2D" parent="." unique_id=1006892924]
+shape = SubResource("RectangleShape2D_x4g88")

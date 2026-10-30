@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d2louwt0f1yub"
-path="res://.godot/imported/loverboi-Sheet.png-2efe8153844ea88d471c8c7643b7c4c6.ctex"
+uid="uid://b762fvug65eif"
+path="res://.godot/imported/loverboi-Run-Sheet.png-76c17539bc30b5a709a20f8ca9563dd4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/loverboi-Sheet.png"
-dest_files=["res://.godot/imported/loverboi-Sheet.png-2efe8153844ea88d471c8c7643b7c4c6.ctex"]
+source_file="res://sprites/loverboi-Run-Sheet.png"
+dest_files=["res://.godot/imported/loverboi-Run-Sheet.png-76c17539bc30b5a709a20f8ca9563dd4.ctex"]
 
 [params]
 
