@@ -1,23 +1,29 @@
 [gd_scene format=3 uid="uid://ii81fpjjh73k"]
 
-[ext_resource type="Texture2D" uid="uid://b7apuj5gf5wde" path="res://sprites/loverboi.png" id="1_cqvsh"]
-[ext_resource type="Texture2D" uid="uid://b762fvug65eif" path="res://sprites/loverboi-Run-Sheet.png" id="2_kip5n"]
+[ext_resource type="Texture2D" uid="uid://b55xlhttar6yv" path="res://sprites/loverboi.png" id="1_cqvsh"]
+[ext_resource type="Script" uid="uid://bojtb4snriicw" path="res://scripts/lover_boy.gd" id="1_kip5n"]
+[ext_resource type="Texture2D" uid="uid://b2fpau3bsxxtx" path="res://sprites/loverboi-Run-Sheet.png" id="2_kip5n"]
+[ext_resource type="Texture2D" uid="uid://cyxh6dr1bwie8" path="res://sprites/loverboi_jump.png" id="3_cd51h"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_kip5n"]
-atlas = ExtResource("2_kip5n")
+[sub_resource type="AtlasTexture" id="AtlasTexture_51pu8"]
+atlas = ExtResource("3_cd51h")
 region = Rect2(0, 0, 55, 75)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_cd51h"]
 atlas = ExtResource("2_kip5n")
-region = Rect2(55, 0, 55, 75)
+region = Rect2(0, 0, 60, 75)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fwd40"]
 atlas = ExtResource("2_kip5n")
-region = Rect2(110, 0, 55, 75)
+region = Rect2(60, 0, 60, 75)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_oru0c"]
 atlas = ExtResource("2_kip5n")
-region = Rect2(165, 0, 55, 75)
+region = Rect2(120, 0, 60, 75)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lhtwn"]
+atlas = ExtResource("2_kip5n")
+region = Rect2(180, 0, 60, 75)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_4k2iy"]
 animations = [{
@@ -31,8 +37,13 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_kip5n")
+"texture": SubResource("AtlasTexture_51pu8")
+}],
+"loop": 1,
+"name": &"jump",
+"speed": 5.0
 }, {
+"frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_cd51h")
 }, {
@@ -41,6 +52,9 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_oru0c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lhtwn")
 }],
 "loop": 1,
 "name": &"run",
@@ -48,16 +62,25 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_x4g88"]
-size = Vector2(49, 90)
+size = Vector2(49, 76)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4k2iy"]
+size = Vector2(49, 81)
 
 [node name="LoverBoy" type="CharacterBody2D" unique_id=52732028]
 texture_filter = 1
+script = ExtResource("1_kip5n")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1060011234]
-position = Vector2(1, 7)
+z_index = 1
+position = Vector2(-3, -7)
 sprite_frames = SubResource("SpriteFrames_4k2iy")
-animation = &"idle"
+animation = &"jump"
 
 [node name="RunCollision" type="CollisionShape2D" parent="." unique_id=1006892924]
-position = Vector2(0.5, 7)
+position = Vector2(-4, -7)
 shape = SubResource("RectangleShape2D_x4g88")
+
+[node name="JumpCollision" type="CollisionShape2D" parent="." unique_id=735130809]
+position = Vector2(-2.5, -10.5)
+shape = SubResource("RectangleShape2D_4k2iy")

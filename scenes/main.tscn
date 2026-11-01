@@ -4,14 +4,15 @@
 [ext_resource type="PackedScene" uid="uid://br1f5ii1sngix" path="res://scenes/ground.tscn" id="2_jyhfs"]
 [ext_resource type="PackedScene" uid="uid://ii81fpjjh73k" path="res://scenes/lover_boy.tscn" id="3_tbgi4"]
 
-[node name="Main" type="Node" unique_id=814457331]
+[node name="Node" type="Node" unique_id=814457331]
 
 [node name="ParallaxBackground" parent="." unique_id=145498883 instance=ExtResource("1_sugp2")]
 
 [node name="Ground" parent="." unique_id=1916897480 instance=ExtResource("2_jyhfs")]
+position = Vector2(0, -4)
 
 [node name="LoverBoy" parent="." unique_id=52732028 instance=ExtResource("3_tbgi4")]
-position = Vector2(59, 556)
+position = Vector2(43, 576)
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1068113169]
-position = Vector2(576, 500)
+position = Vector2(577, 323)

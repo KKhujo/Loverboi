@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="loverboi"
-run/main_scene="uid://bxgpq0q4r63t"
+run/main_scene="uid://d4gcy5sayx5nm"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 
 [display]
