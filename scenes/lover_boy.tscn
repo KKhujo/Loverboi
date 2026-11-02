@@ -68,7 +68,7 @@ size = Vector2(49, 76)
 size = Vector2(49, 84)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vigoa"]
-size = Vector2(45, 89)
+size = Vector2(45, 86)
 
 [node name="LoverBoy" type="CharacterBody2D" unique_id=52732028]
 texture_filter = 1
@@ -76,7 +76,8 @@ script = ExtResource("1_kip5n")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1060011234]
 z_index = 1
-position = Vector2(-3, -7)
+position = Vector2(-1.5, -4.5)
+scale = Vector2(0.9375, 0.9444444)
 sprite_frames = SubResource("SpriteFrames_4k2iy")
 animation = &"idle"
 
@@ -91,5 +92,5 @@ shape = SubResource("RectangleShape2D_4k2iy")
 [node name="Area2D" type="Area2D" parent="." unique_id=1461661459]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=575135654]
-position = Vector2(-3.5, -6.5)
+position = Vector2(-2, -6)
 shape = SubResource("RectangleShape2D_vigoa")

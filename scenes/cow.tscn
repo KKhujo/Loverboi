@@ -6,7 +6,11 @@
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=531327386]
 texture_filter = 1
+position = Vector2(6, 5.5)
+scale = Vector2(0.875, 0.87777776)
 texture = ExtResource("1_nuh3y")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=834531377]
+position = Vector2(7.4999967, 5.499999)
+scale = Vector2(0.85286456, 0.8680555)
 polygon = PackedVector2Array(-48, -45, -48, -34.2, -42.8, -29, -37, -29, -37, -21.1, -40, -19.1, -40, -8.200001, -33.8, -2, -31, -2, -31, 15.900002, -25, 20.900002, -25, 45, 4, 45, 4, 25, 12.200001, 25, 17, 29.800003, 17, 45, 46, 45, 46.9, 31, 48, 31, 48, -16.6, 44, -20, 44, -22, 3.0999985, -22, 1.0999985, -25, -3.2000008, -25, -5, -26.8, -5, -29, 3.9000015, -29, 10.900002, -37, 12.200001, -37, 13.299999, -39, 10, -44.5)
