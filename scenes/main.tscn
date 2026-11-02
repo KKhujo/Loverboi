@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://bxgpq0q4r63t" path="res://scenes/bg.tscn" id="1_sugp2"]
 [ext_resource type="PackedScene" uid="uid://br1f5ii1sngix" path="res://scenes/ground.tscn" id="2_jyhfs"]
 [ext_resource type="PackedScene" uid="uid://ii81fpjjh73k" path="res://scenes/lover_boy.tscn" id="3_tbgi4"]
+[ext_resource type="PackedScene" uid="uid://crummggytehe4" path="res://scenes/canvas_layer.tscn" id="5_tbgi4"]
 
 [node name="Main" type="Node" unique_id=814457331]
 script = ExtResource("1_jyhfs")
@@ -18,3 +19,5 @@ position = Vector2(43, 576)
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1068113169]
 position = Vector2(577, 323)
+
+[node name="CanvasLayer" parent="." unique_id=895663295 instance=ExtResource("5_tbgi4")]

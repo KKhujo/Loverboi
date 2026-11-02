@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://duq80gxmia6db"]
 
 [ext_resource type="Texture2D" uid="uid://77t6u36w34u" path="res://pics/monds.png" id="1_vq2ll"]
+[ext_resource type="Script" uid="uid://2sfs4o2ob5tw" path="res://scripts/monds.gd" id="1_xqast"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vq2ll"]
 atlas = ExtResource("1_vq2ll")
@@ -41,7 +42,8 @@ animations = [{
 [sub_resource type="CircleShape2D" id="CircleShape2D_4k2iy"]
 radius = 99.024536
 
-[node name="Area2D" type="CharacterBody2D" unique_id=898891770]
+[node name="Area2D" type="Area2D" unique_id=519679004]
+script = ExtResource("1_xqast")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1642451832]
 position = Vector2(240.25, 333.25)
@@ -53,3 +55,5 @@ animation = &"new_animation"
 position = Vector2(242, 345)
 scale = Vector2(0.32332155, 0.31201044)
 shape = SubResource("CircleShape2D_4k2iy")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]

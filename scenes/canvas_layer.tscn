@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://crummggytehe4"]
+
+[ext_resource type="FontFile" uid="uid://dmibke02i31gp" path="res://fonts/Snowbell-Wp4g9.ttf" id="1_c4rma"]
+
+[node name="CanvasLayer" type="CanvasLayer" unique_id=895663295]
+
+[node name="Monds" type="Label" parent="." unique_id=1943674765]
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 113.0
+offset_bottom = 29.0
+size_flags_horizontal = 0
+size_flags_vertical = 1
+theme_override_fonts/font = ExtResource("1_c4rma")
+text = "Monds:"
+metadata/_edit_use_anchors_ = true
+
+[node name="Start" type="Label" parent="." unique_id=864136470]
+offset_left = 455.0
+offset_top = 256.0
+offset_right = 703.0
+offset_bottom = 313.0
+theme_override_fonts/font = ExtResource("1_c4rma")
+text = "				Press Enter
+ 							to 
+						Start"

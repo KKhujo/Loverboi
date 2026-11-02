@@ -65,7 +65,10 @@ animations = [{
 size = Vector2(49, 76)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4k2iy"]
-size = Vector2(49, 81)
+size = Vector2(49, 84)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vigoa"]
+size = Vector2(45, 89)
 
 [node name="LoverBoy" type="CharacterBody2D" unique_id=52732028]
 texture_filter = 1
@@ -82,5 +85,11 @@ position = Vector2(-4, -7)
 shape = SubResource("RectangleShape2D_x4g88")
 
 [node name="JumpCollision" type="CollisionShape2D" parent="." unique_id=735130809]
-position = Vector2(-2.5, -10.5)
+position = Vector2(-2.5, -9)
 shape = SubResource("RectangleShape2D_4k2iy")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1461661459]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=575135654]
+position = Vector2(-3.5, -6.5)
+shape = SubResource("RectangleShape2D_vigoa")
