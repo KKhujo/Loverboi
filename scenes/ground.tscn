@@ -3,16 +3,16 @@
 [ext_resource type="Texture2D" uid="uid://cgmeg7dgm18cv" path="res://bg/ground.png" id="1_pybca"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_x4g88"]
-size = Vector2(1807.75, 49)
+size = Vector2(2300.875, 49)
 
 [node name="Ground" type="StaticBody2D" unique_id=1916897480]
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=222686990]
 texture_filter = 1
-position = Vector2(902.99994, 632)
-scale = Vector2(0.9868687, 1)
+position = Vector2(1153.0077, 632)
+scale = Vector2(1.2601011, 1)
 texture = ExtResource("1_pybca")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=593282479]
-position = Vector2(902, 640)
+position = Vector2(1148.5625, 640)
 shape = SubResource("RectangleShape2D_x4g88")

@@ -75,7 +75,7 @@ script = ExtResource("1_kip5n")
 z_index = 1
 position = Vector2(-3, -7)
 sprite_frames = SubResource("SpriteFrames_4k2iy")
-animation = &"jump"
+animation = &"idle"
 
 [node name="RunCollision" type="CollisionShape2D" parent="." unique_id=1006892924]
 position = Vector2(-4, -7)
