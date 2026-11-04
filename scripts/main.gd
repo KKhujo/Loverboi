@@ -10,12 +10,14 @@ var monds_height := [200,-13]
 const LOVERBOI_INIT_POS = Vector2i(150, 485)
 const CAM_INIT_POS = Vector2i(576, 324)
 var speed : float
-const INIT_VELOCITY : float = 10.0
+const INIT_VELOCITY : float = 5.0
 const MAX_VELOCITY : int = 25
 var screen_size : Vector2i
 var ground_height : int
 var last_obs 
 var game_running : bool
+
+var score := 0
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	screen_size = get_window().size
