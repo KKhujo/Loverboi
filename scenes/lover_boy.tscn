@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://ii81fpjjh73k"]
 
-[ext_resource type="Texture2D" uid="uid://b55xlhttar6yv" path="res://sprites/loverboi.png" id="1_cqvsh"]
+[ext_resource type="Texture2D" uid="uid://bw2o0geoesuuh" path="res://sprites/loverboi.png" id="1_cqvsh"]
 [ext_resource type="Script" uid="uid://bojtb4snriicw" path="res://scripts/lover_boy.gd" id="1_kip5n"]
-[ext_resource type="Texture2D" uid="uid://b2fpau3bsxxtx" path="res://sprites/loverboi-Run-Sheet.png" id="2_kip5n"]
-[ext_resource type="Texture2D" uid="uid://cyxh6dr1bwie8" path="res://sprites/loverboi_jump.png" id="3_cd51h"]
+[ext_resource type="Texture2D" uid="uid://cj7bcy4vfqtab" path="res://sprites/loverboi-Run-Sheet.png" id="2_kip5n"]
+[ext_resource type="Texture2D" uid="uid://cs0co05mxhtdq" path="res://sprites/loverboi_jump.png" id="3_cd51h"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_51pu8"]
 atlas = ExtResource("3_cd51h")
