@@ -1,7 +1,4 @@
 # Godot 4+ specific ignores
 .godot/
 /android/
-<<<<<<< HEAD
 *.import
-=======
->>>>>>> 92a1cf7a5f19cc106311f00aef83e2fe27c2dee1
